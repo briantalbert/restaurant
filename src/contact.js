@@ -37,6 +37,28 @@ export default function buildContactPage() {
         let contact = document.createElement('div');
         contact.classList.add('contact')
 
+        let address = document.createElement('div');
+        address.classList.add('address');
+        
+        let phone = document.createElement('div');
+        phone.classList.add('phone');
+
+        let addressText = document.createElement('p');
+        addressText.textContent = "193 St. Michael Way";
+        let cityStateText = document.createElement('p');
+        cityStateText.textContent = "Newport News, VA 23602";
+        
+
+        let phoneText = document.createElement('p');
+        phoneText.textContent = "434.555.5944";
+
+        address.appendChild(addressText);
+        address.appendChild(cityStateText);
+        phone.appendChild(phoneText);
+
+        contact.appendChild(address);
+        contact.appendChild(phone);
+
         return contact;
     }
 

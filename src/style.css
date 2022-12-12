@@ -94,4 +94,33 @@ li:hover {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
     background: lightsteelblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 2fr;
+    gap: 10px;
+}
+
+.address {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding: 10px;
+}
+
+.address p {
+    margin: 0;
+    padding: 0;
+}
+
+.phone {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.address,
+.phone {
+    background-color: lightslategray;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px burlywood;
 }
