@@ -44,7 +44,12 @@ export default function buildMenuPage() {
         menuitems.forEach(item => {
             let menuItemCard = document.createElement('div');
             menuItemCard.classList.add('menuitemcard');
-            menuItemCard.textContent = item;
+
+            let food = document.createElement('p');
+            food.classList.add('food');
+
+            food.textContent = item;
+            menuItemCard.appendChild(food);
             menu.appendChild(menuItemCard);
         });
 

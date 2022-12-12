@@ -1,5 +1,6 @@
 import buildHomePage from "./home";
 import buildMenuPage from "./menu";
+import buildContactPage from "./contact";
 
 export default function createNavLinks() {
     let links = document.querySelectorAll('li');
