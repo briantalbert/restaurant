@@ -43,6 +43,9 @@ export default function buildContactPage() {
         let phone = document.createElement('div');
         phone.classList.add('phone');
 
+        let email = document.createElement('div');
+        email.classList.add('email');
+
         let addressText = document.createElement('p');
         addressText.textContent = "193 St. Michael Way";
         let cityStateText = document.createElement('p');
@@ -52,12 +55,32 @@ export default function buildContactPage() {
         let phoneText = document.createElement('p');
         phoneText.textContent = "434.555.5944";
 
+        let emailText = document.createElement('p');
+        emailText.textContent = "BrianLTalbert@gmail.com";
+
+        let addressLabel = document.createElement('p');
+        addressLabel.classList.add('addresslabel');
+        addressLabel.textContent = "Address:"
+
+        let phoneLabel = document.createElement('p');
+        phoneLabel.classList.add('phonelabel');
+        phoneLabel.textContent = "Phone Number:"
+
+        let emailLabel = document.createElement('p');
+        emailLabel.classList.add('emaillabel');
+        emailLabel.textContent = "E-mail Address:"
+
         address.appendChild(addressText);
         address.appendChild(cityStateText);
         phone.appendChild(phoneText);
+        email.appendChild(emailText);
 
         contact.appendChild(address);
         contact.appendChild(phone);
+        contact.appendChild(email);
+        contact.appendChild(addressLabel);
+        contact.appendChild(phoneLabel);
+        contact.appendChild(emailLabel);
 
         return contact;
     }

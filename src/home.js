@@ -31,23 +31,30 @@ export default function buildHomePage() {
     function createMain() {
         let main = document.createElement('div');
         main.classList.add('main');
-        main.textContent = 'MAIN CONTENT';
         
         return main;
     }
 
     function createSidebar() {
+        let sideText = `Welcome to Kevin's Taco Hut! Kevin has been making tacos since 1986, and his taco hut has been a fixture
+                        on these city streets for over 30 years. With homemade tortillas, deliciousy tender meat, and fresh
+                        toppings, once you have a fresh Kevin taco, you won't go anywhere else!`
         let sidebar = document.createElement('div');
+        let sideBarTextContainer = document.createElement('div');
+        sideBarTextContainer.textContent = sideText;
         sidebar.classList.add('sidebar');
-        sidebar.textContent = 'SIDEBAR CONTENT';
+        sidebar.appendChild(sideBarTextContainer);
 
         return sidebar;
     }
 
     function createFooter() {
+        let footerText = `Page made by Brian Talbert. Unfortunately, Kevin's Taco Hut does not exist. Yet.`
         let footer = document.createElement('div');
+        let footerTextContainer = document.createElement('div');
+        footerTextContainer.textContent = footerText;
         footer.classList.add('footer');
-        footer.textContent = 'FOOTER CONTENT';
+        footer.appendChild(footerTextContainer);
 
         return footer;
     }
